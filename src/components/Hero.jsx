@@ -1,6 +1,6 @@
 const Hero = ()=>{
     return <>
-        this is hero
+        
     </>
 }
 
