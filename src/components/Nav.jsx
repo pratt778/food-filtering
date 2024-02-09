@@ -10,7 +10,7 @@ const Nav = ()=>{
     const [active,setActive]=useState(false);
     return <>
     <section className='w-full'>
-        <div className="nav-container w-full max-w-[1200px] mx-auto p-3 flex items-center gap-3">
+        <div className="nav-container w-full  max-w-[1200px] mx-auto p-3 flex items-center gap-[5%] sm:gap-[3%]">
             <div className="toggle" onClick={()=>setActive(!active)}>
                 {(active==false)?<AiOutlineMenu/>:<AiOutlineClose/>}
             </div>
@@ -25,6 +25,10 @@ const Nav = ()=>{
                 <AiOutlineSearch/>
                 <input type="text" placeholder='Search foods...' />
             </div>
+            <div className=' w-full bg-slate-200 rounded-3xl items-center h-fit text-xl py-2 max-w-[700px]   hidden sm:flex sm:px-2 '>
+                         <AiOutlineSearch className='text-black w-[50px]'/>
+                        <input type="text" placeholder='Search foods...' className='bg-transparent outline-none' />
+                    </div>
             <button className='flex items-center gap-1'>
                 <AiOutlineShoppingCart/>
                 <span>Cart</span>
@@ -39,7 +43,7 @@ const Nav = ()=>{
                     <li className='flex items-center py-2 gap-3'><AiFillTag/>Promotions</li>
                     <li className='flex items-center py-2 gap-3'><BsFillSaveFill/>Best Ones</li>
                     <li className='flex items-center py-2 gap-3'><FaUserFriends/>Invite Friends</li>
-                    <div className='flex-col w-full items-center h-fit justify-center gap-2'>
+                    <div className='flex-col w-full items-center h-fit justify-center gap-2 sm:hidden'>
                         <input type="text" placeholder='Search foods...' className='bg-transparent outline-none w-full border-b-2 border-black' />
                         <AiOutlineSearch className='bg-gray-700 text-white w-full mt-1 h-8 py-2'/>
                     </div>

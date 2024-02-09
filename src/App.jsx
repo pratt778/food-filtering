@@ -7,7 +7,7 @@
   return <>
     <Nav/>
     <Hero/>
-  
+  <HeadCard/>
   </>
 }
 
