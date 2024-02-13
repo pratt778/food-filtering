@@ -8,6 +8,7 @@
     <Nav/>
     <Hero/>
   <HeadCard/>
+  <Food/>
   </>
 }
 
