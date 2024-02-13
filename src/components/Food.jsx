@@ -7,7 +7,7 @@ const Food = ()=>{
         setMeal(data.filter((prod)=>prod.category==category))
     }
     const filterPrice=(price)=>{
-        setMeal(meal.filter((item)=>item.price==price))
+        setMeal(data.filter((item)=>item.price==price))
     }
     return <>
     <section className="w-full max-w-[1200px] mx-auto mt-10">
