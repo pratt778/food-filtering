@@ -9,6 +9,7 @@
     <Hero/>
   <HeadCard/>
   <Food/>
+  <Category/>
   </>
 }
 

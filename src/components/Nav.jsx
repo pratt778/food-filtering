@@ -34,15 +34,15 @@ const Nav = ()=>{
                 <span>Cart</span>
             </button>
 
-            <nav className={active==true?"sidebar z-50 fixed bg-gray-300 h-screen top-0 right-0 w-1/2 transition-all ease-in-out duration-300":"fixed right-[-1000px]"}>
-                <ul className='flex flex-col px-4 mt-10 gap-3 h-full'>
-                    <li className='flex items-center py-2 gap-3'><MdFavorite/>Favorites</li>
-                    <li className='flex items-center py-2 gap-3'><TbTruckDelivery/> Orders</li>
-                    <li className='flex items-center py-2 gap-3'><FaWallet/>Wallet</li>
-                    <li className='flex items-center py-2 gap-3'><MdHelp/> Help</li>
-                    <li className='flex items-center py-2 gap-3'><AiFillTag/>Promotions</li>
-                    <li className='flex items-center py-2 gap-3'><BsFillSaveFill/>Best Ones</li>
-                    <li className='flex items-center py-2 gap-3'><FaUserFriends/>Invite Friends</li>
+            <nav className={active==true?"sidebar z-50 w-fit sm:h-fit right-0 top-0 bg-gray-100 rounded-xl py-3 h-screen sm:left-0 absolute sm:bg-gray-100 sm:w-[98vw] sm:top-20 shadow-3xl sm:rounded-2xl transition-all ease-in-out duration-300":"fixed right-[-1000px] sm:top-[-1000px]"}>
+                <ul className='flex flex-col sm:flex-row px-4 cursor-pointer sm:w-full sm:justify-evenly'>
+                    <li className='text-4xl py-2 '><MdFavorite/></li>
+                    <li className='text-4xl py-2 '><TbTruckDelivery/> </li>
+                    <li className='text-4xl py-2 '><FaWallet/></li>
+                    <li className='text-4xl py-2 '><MdHelp/> </li>
+                    <li className='text-4xl py-2 '><AiFillTag/></li>
+                    <li className='text-4xl py-2 '><BsFillSaveFill/> </li>
+                    <li className='text-4xl py-2 '><FaUserFriends/> </li>
                     <div className='flex-col w-full items-center h-fit justify-center gap-2 sm:hidden'>
                         <input type="text" placeholder='Search foods...' className='bg-transparent outline-none w-full border-b-2 border-black' />
                         <AiOutlineSearch className='bg-gray-700 text-white w-full mt-1 h-8 py-2'/>
